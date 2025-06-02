@@ -10,7 +10,7 @@ source:
   sha256: 63157d7a00a273b59676b5be5aa817c75c37efc88478231f1a160f4cfb7f7878
 
 build:
-  number: 5
+  number: 6
   # https://github.com/CheetahTemplate3/cheetah3/blob/3.2.5/SetupConfig.py#L83
   # noarch: python
   script: {{ PYTHON }} -m pip install . -vv
@@ -25,6 +25,7 @@ requirements:
   host:
     - pip
     - python
+    - setuptools
   run:
     - python
 
